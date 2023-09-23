@@ -1,7 +1,7 @@
 import requests
 
 
-def get_book_cover(title, api_key='AIzaSyC3JbIbLqZRw-zhRSF6aW5t9ihWZdyQEj8'):
+def get_book_cover(title, api_key='your API key'):
     # Set the base URL
     base_url = 'https://www.googleapis.com/books/v1/volumes'
 
@@ -32,7 +32,7 @@ def get_book_cover(title, api_key='AIzaSyC3JbIbLqZRw-zhRSF6aW5t9ihWZdyQEj8'):
     return book_cover_url
 
 
-def get_book_information(book_title, author_name, api_key='AIzaSyC3JbIbLqZRw-zhRSF6aW5t9ihWZdyQEj8'):
+def get_book_information(book_title, author_name, api_key='your API key'):
     url = f"https://www.googleapis.com/books/v1/volumes?q=intitle:{book_title}+inauthor:{author_name}&key={api_key}"
     # Make the API request
     response = requests.get(url)
