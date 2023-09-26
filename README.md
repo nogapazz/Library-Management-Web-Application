@@ -14,8 +14,13 @@ Features:
 - Ability for librarians to sign up new customers.
 - Execution of borrowings and returns by librarians.
 
-How To Use?
-- Go to get_book_info and add your google api-key.
-- Go to db_conection and ad your mysql db info.
+# How To Use?
+- Create a directory for the project (you can name it 'my_app' for example).
+- Create two more directories, 'templates' and 'static', and place them inside the project directory.
+- Put all the HTML files into the 'templates' directory.
+- Put all the CSS files into the 'static' directory.
+- Place all Python files into the project directory ('my_app').
+- Open 'get_book_info.py' and add your Google API key.
+- Open 'db_connection.py' and add your SQL database information.
   
 ![sitemap](https://github.com/nogapazz/Library-Management-Web-Application/assets/134314972/a6de44a5-8c3b-4edd-881e-f3209507eeec)
