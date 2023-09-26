@@ -1,0 +1,598 @@
+/* Navbar styling */
+nav {
+  background: rgba(47, 47, 47, 0.22);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  z-index: 1;
+  width: 100%px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navbar-dexters-library {
+  width: 128px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+  text-decoration: none;
+
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 14px;
+  color: rgba(0,0,0,1);
+  font-family: Inter;
+  font-size: 12px;
+  opacity: 1;
+  align-items: right;
+}
+
+
+.nav-middle {
+margin-left: 60px;
+}
+
+
+.nav-button:hover, .search-button-navbar:hover {
+  background-color: #555;
+}
+
+.logo {
+  width: 57px;
+  height: 60px;
+  margin-left: 0px;
+  top: 5px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  opacity: 1;
+}
+
+.search-button-navbar {
+  width: 34px;
+  height: 33.72px;
+  border: none;
+  top: 14px;
+  background-size: cover;
+  position: relative;
+}
+
+.name {
+  color: #fff;
+}
+
+.background-pic {
+  width: 100%;
+  height: 824px;
+  background: url("static/Assets/new-nli-reading-room-herzog-de-meuron.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+* {
+  /* Reset browser's padding and margin */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+}
+
+.search-container {
+  width: 500px;
+  height: 90px;
+  position: absolute;
+  top: 182px;
+  left: 43px;
+  border-radius: 16px;
+  overflow: hidden;
+  outline: none
+  z-index: 2;
+
+}
+
+/* The point of this tutorial is here */
+.form {
+  display: flex;
+  flex-direction: row;
+
+}
+.search-field {
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -33px;
+
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+
+ .background-pic2 {
+  width: 100%;
+  height: 1000px;
+  background: url("Assets/Propels-Top-10-Business-Transformation-Books.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.35;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+
+    .background-pic4 {
+  width: 100%;
+  height: 2000px;
+  background: url("Assets/Propels-Top-10-Business-Transformation-Books.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.25;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+
+
+.table-container {
+  margin-top: 155px;
+  display: flex; /* Use the flexbox layout */
+  justify-content: space-between; /* Add space between the tables */
+}
+
+table {
+  margin: auto;
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 0px;
+  border: 1px solid  #EC6800;
+  width: 45%; /* Adjust the width of the tables */
+}
+
+caption {
+  font-weight: bold; /* Make the caption text bold */
+  font-size: 18px; /* Increase the font size of the caption text */
+  margin-bottom: 10px;
+}
+
+
+td, th {
+  border: 1px solid #FF9744;
+  text-align: left;
+  padding: 8px;
+}
+
+.background-pic {
+  width: 100%;
+  height: 824px;
+  background: url("Assets/new-nli-reading-room-herzog-de-meuron.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+* {
+  /* Reset browser's padding and margin */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+}
+
+.container {
+  width: 500px;
+  height: 90px;
+  position: absolute;
+  top: 182px;
+  left: 43px;
+  border-radius: 16px;
+  overflow: hidden;
+  outline: none
+  z-index: 2;
+
+}
+
+
+.form {
+  display: flex;
+  flex-direction: row;
+
+}
+.search-field {
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -33px;
+
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.page-title {
+  width: 1000px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 155px;
+  left: 67px;
+  font-family: Inria Sans;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+  line-height: 45px;
+}
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* form styling */
+.container-form {
+  top: 80px;
+  left: 34%;
+  position: relative;
+  overflow: hidden;
+  max-width: 390px;
+  background: rgba(47, 47, 47, 0.22);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+
+.container-form .title-text {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.container-form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+/* button styling */
+.orange-button {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.orange-button input[type="submit"] {
+  background: #ff9f1a;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px rgba(255,159,26,0.5);
+}
+
+.orange-button input[type="submit"]:hover {
+  background: #e68a00;
+}
+-color: orange;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+.orange-button input[type="submit"]:hover {
+  background-color: #ff944d;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+    .background-pic3{
+      width: 100%;
+      height: 824px;
+      background: url("Assets/IMG-2472.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+
+
+.display-products {
+  position: absolute;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  top: 200px;
+  margin: 40px;
+}
+
+.display-products li {
+  width: 158px;
+  height: 217.23px;
+  display: inline-block;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 28px;
+  box-sizing: border-box;
+}
+
+.display-products img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.display-products h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.display-products p {
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+  color: gray;
+}
+
+.display-products a {
+  text-decoration: none;
+}
+
+
+.table-container {
+  margin-top: 155px;
+  display: flex; /* Use the flexbox layout */
+  justify-content: space-between; /* Add space between the tables */
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.book-cover {
+  width: 264px;
+  height: 310px;
+  background: none;
+  opacity: 1;
+  position: absolute;
+  top: 175px;
+  left: 741px;
+  overflow: hidden;
+}
+
+
+.book-description {
+  width: 504px;
+  height: 241px;
+  background: none;
+  opacity: 1;
+  position: absolute;
+  top: 298px;
+  left: 149px;
+  overflow: hidden;
+  font-family: Inria Sans;
+}
+
+.book-name-author-name {
+  width: 504px;
+  height: 80px;
+  background: none;
+  opacity: 1;
+  position: absolute;
+  top: 190px;
+  left: 149px;
+  overflow: hidden;
+  font-family: Inria Sans;
+}
+
+
+.branches-table {
+  width: 903px;
+  height: 248px;
+  background: none;
+  opacity: 1;
+  position: absolute;
+  top: 673px;
+  left: 149px;
+  overflow: hidden;
+}
+
+
+.branches-title {
+  width: 903px;
+  height: 40px;
+  background: none;
+  opacity: 1;
+  position: absolute;
+  top: 607px;
+  left: 149px;
+  overflow: hidden;
+  font-family: Inria Sans;
+}
+
+
+.table-container {
+  margin-top: 155px;
+  display: flex; /* Use the flexbox layout */
+  justify-content: space-between; /* Add space between the tables */
+}
+
+
+table {
+  padding: auto;
+  margin: auto;
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 0px;
+  border: 1px solid  #EC6800;
+  width: 45%; /* Adjust the width of the tables */
+}
+
+
+caption {
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: bold; /* Make the caption text bold */
+  font-size: 22px; /* Increase the font size of the caption text */
+  margin-bottom: 20px;
+}
+
+
+td, th {
+  border: 1px solid #FF9744;
+  text-align: left;
+  padding: 8px;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+
+h3 {
+  display: center;
+  text-align: left;
+  padding: 8px;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.container-form .title-text2 {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: left;
+}
+
+
+.page-title2 {
+  width: 800px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 190px;
+  left: 67px;
+  font-family: Inria Sans;
+  font-weight: Regular;
+  font-size: 22px;
+  opacity: 1;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+.search-container2 {
+  width: 500px;
+  height: 90px;
+  position: absolute;
+  top: 120px;
+  left: 43px;
+  border-radius: 16px;
+  overflow: hidden;
+  outline: none
+  z-index: 2;
+
+}
+
+.input-select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+.inline-label {
+  display: inline-block !important;
+  width: 158px !important;
+  height: 217.23px !important;
+  background: none !important;
+}
