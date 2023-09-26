@@ -1,0 +1,56 @@
+<!-- this page is displayed to the subscriber if he tried to order a book but he entered a branch name that doesnt exist in our db -->
+<!--this page will be displayed only in case of a technical bug because the user supposed to choose a branch from the options-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="static/Assets/pngwing.com.png">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="static/subscriber.css">
+</head>
+<body>
+<div class="background-pic3"></div>
+<!--navigation bar-->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="/homepage-subscriber" class="navbar-dexters-library">Dexter's Library</a>
+        <img class="logo" src="static/Assets/pngwing.com.png"/>
+      </div>
+      <div class="nav-middle">
+        <a href="/new-arrivals-subscriber">
+          <button class="nav-button">New Arrivals</button></a>
+        <a href="/best-sellers-subscriber">
+          <button class="nav-button">Best Sellers</button></a>
+        <a href="/branches-subscriber">
+          <button class="nav-button">Branches</button></a>
+        <a href="/order-book">
+          <button class="nav-button">Order Book</button></a>
+        <a href="/borrows-subscriber">
+          <button class="nav-button">History of borrows</button></a>
+        <a href="/extension">
+          <button class="nav-button">Do you need an extension?</button></a>
+         <a href="/homepage-subscriber">
+          <img class="search-button-navbar" src="static/assets/clipart322068.png"/>
+         </a>
+      </div>
+      <div class="nav-right">
+        <a href="/homepage-not-logged">
+          <button class="nav-button">Log Out</button></a>
+      </div>
+    </div>
+  </nav>
+<!-- this is a message box that says that the subscriber entered a branch name who does not exists and asks him to try again-->
+    <div class="container-form">
+        <div class="title-text2">
+        <p>The branch name you've typed does not exists<br><br>Please try again</p>
+          </div><br><br>
+        <!--this button allows the subscriber go back to the order book page and try the order again-->
+        <div class="orange-button">
+        <a href="/order-book">
+        <input type="submit" value="Try Again" name="ok"></div><br>
+    </div>
+
+</body>
+</html>

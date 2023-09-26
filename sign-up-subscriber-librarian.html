@@ -1,0 +1,82 @@
+<!-- this page allows a librarian to sign up a new subscriber that comes to the library-->
+<!--it has a fill form the user needs to fill-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="static/Assets/pngwing.com.png">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="static/librarian.css">
+</head>
+<body>
+<div class="background-pic2"></div>
+<!--navigation bar-->
+    <nav>
+        <div class="nav-container">
+          <div class="nav-left">
+            <a href="/homepage-librarian" class="navbar-dexters-library">Dexter's Library</a>
+            <img class="logo" src="static/Assets/pngwing.com.png"/>
+          </div>
+          <div class="nav-middle">
+            <a href="/borrow-book-librarian-1">
+              <button class="nav-button">Borrow A Book</button></a>
+            <a href="/return-book-librarian-1">
+              <button class="nav-button">Return A Book</button></a>
+            <a href="/sign-up-subscriber-librarian">
+              <button class="nav-button">Subscriber Registration</button></a>
+            <a href="/insert-book-1">
+              <button class="nav-button">Insert Books</button></a>
+            <a href="/new-arrivals-librarian">
+              <button class="nav-button">New Arrivals</button></a>
+            <a href="/best-sellers-librarian">
+              <button class="nav-button">Best Sellers</button></a>
+            <a href="/Branches-librarian">
+              <button class="nav-button">Branches</button></a>
+          </div>
+          <div class="nav-right">
+            <a href="/homepage-librarian">
+              <img class="search-button-navbar" src="static/assets/clipart322068.png"/></a>
+            <a href="/log-in">
+              <button class="nav-button">Log Out</button></a>
+          </div>
+        </div>
+  </nav>
+    <!-- this is a sign up as a subscriber fill form that the librarian fills. it wont let the subscriber to sign up if all the fill fields are not filled-->
+
+  <form action="/sign-up-subscriber" method="post">
+    <div class="container-form">
+      <div class="field input">
+        <div class="title-text">
+          <div class="title signup">
+        <h2>Sign up</h2></div><br>
+          </div>
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br>
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone_num">Phone Number:</label><br>
+        <input type="tel" id="phone_num" name="phone_num" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" required><br>
+        <label for="street">Street:</label><br>
+        <input type="text" id="street" name="street" required><br>
+        <label for="apartment">Apartment:</label><br>
+        <input type="text" id="apartment" name="apartment" required><br>
+        <!-- the minimum birthdate can be: 1900-01-01 -->
+        <label for="birth_date">Birth date:</label><br>
+        <input type="date" id="birth_date" name="birth_date" min="1900-01-01" required><br><br>
+        <div class="orange-button">
+        <input type="submit" value="Submit">
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+</body>
+</html>

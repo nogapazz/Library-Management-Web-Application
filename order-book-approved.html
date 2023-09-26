@@ -1,0 +1,65 @@
+<!--this page is displayed to the subscriber after he ordered a book and the order was approved-->
+<!--it displays a message that says the order has been confirmed and the estimated arrival date of the book to the branch-->
+<!--the message also says that the user needs to notice the book is kept for him for 3 days from the moment it arrives to the branch -->
+<!--the message also says he can get updated by the order status by clicking a button that will take him for the history of borrows and orders page because the arrival date can change depends on if someone has returned the book before 14 days has passed-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="static/Assets/pngwing.com.png">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="static/subscriber.css">
+</head>
+<body>
+<div class="background-pic2"></div>
+<!--navigation bar-->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="/homepage-subscriber" class="navbar-dexters-library">Dexter's Library</a>
+        <img class="logo" src="static/Assets/pngwing.com.png"/>
+      </div>
+      <div class="nav-middle">
+        <a href="/new-arrivals-subscriber">
+          <button class="nav-button">New Arrivals</button></a>
+        <a href="/best-sellers-subscriber">
+          <button class="nav-button">Best Sellers</button></a>
+        <a href="/branches-subscriber">
+          <button class="nav-button">Branches</button></a>
+        <a href="/order-book">
+          <button class="nav-button">Order Book</button></a>
+        <a href="/borrows-subscriber">
+          <button class="nav-button">History of borrows</button></a>
+        <a href="/extension">
+          <button class="nav-button">Do you need an extension?</button></a>
+         <a href="/homepage-subscriber">
+          <img class="search-button-navbar" src="static/assets/clipart322068.png"/>
+         </a>
+      </div>
+      <div class="nav-right">
+        <a href="/homepage-not-logged">
+          <button class="nav-button">Log Out</button></a>
+      </div>
+    </div>
+  </nav>
+
+  <!--this form is a box message which tells the subscriber the order has approved and that he needs to notice that when the book will arrive to the library, it will be kept for him for 3 days only-->
+
+  <div class="container-form">
+      <div class="field input">
+        <div class="title-text">
+          <div class="title signup">
+            <h3> Order Approved!</h3><br>
+           <h5>Please notice that when the book will arrive to the library, it will be kept for you for 3 days</h5><br><br>
+            <h5>You can press on the button below to get updated by the order status:</h5></div>
+          </div><br>
+          <!--this button allows the subscriber to move to the history of borrows and orders so he can get updated by the order status-->
+          <a href="/borrows-subscriber">
+          <div class="orange-button">
+            <input type="submit" value="View Orders And Borrows"></div></a>
+        </div>
+    </div>
+
+
+</body>
+</html>

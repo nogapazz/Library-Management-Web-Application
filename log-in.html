@@ -1,0 +1,81 @@
+<!-- this page is a log-in or sign up page-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="static/Assets/pngwing.com.png">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="static/not-logged.css">
+</head>
+<body>
+<div class="background-pic2"></div>
+<!--navigation bar-->
+    <nav>
+        <div class="nav-container">
+          <div class="nav-left">
+            <a href="/homepage-not-logged" class="navbar-dexters-library">Dexter's Library</a>
+            <img class="logo" src="static/Assets/pngwing.com.png"/>
+          </div>
+          <div class="nav-middle">
+            <a href="/new-arrivals-not-logged">
+              <button class="nav-button">New Arrivals</button></a>
+            <a href="/best-sellers-not-logged">
+              <button class="nav-button">Best Sellers</button></a>
+            <a href="/branches-not-logged">
+              <button class="nav-button">Branches</button></a>
+             <a href="/homepage-not-logged">
+              <img class="search-button-navbar" src="static/assets/clipart322068.png"/></a>
+          </div>
+          <div class="nav-right">
+            <a href="/log-in">
+              <button class="login-button">Log In / Sign Up</button></a>
+          </div>
+        </div>
+  </nav>
+
+
+<!-- log-in form-->
+
+<div class="container-form">
+    <form action="/log-in" method="post">
+      <div class="field input">
+        <div class="title-text">
+          <div class="title signup">
+        <h2>Log In</h2></div>
+          </div>
+          <!--if the user is already signed up, he needs to input the password and the email to log in-->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password"> Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <div class="orange-button">
+        <input type="submit" value="Log In"  name="login"> </div><br>
+        </div>
+
+    </form>
+
+<!--sign-up as form-->
+
+  <form action="/log-in" method="post">
+      <p style="font-size: 18px;">Not signed up? Sign up now as:</p><br>
+      <!-- those classes shows the user an option to choose to sign up as librarian or as subscriber-->
+      <div class="radio">
+        <input type="radio" id="librarian" name="role" value="librarian" required>
+        <label style="display: inline-block" for="librarian">Librarian</label><br><br>
+      </div>
+      <div class="radio">
+        <input type="radio" id="subscriber" name="role" value="subscriber" required>
+        <label style="display: inline-block" for="subscriber">Subscriber</label><br><br>
+      </div>
+      <div class="orange-button">
+        <input type="submit" value="Sign Up" name="sign_up">
+      </div>
+    </form>
+
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!-- this page allows the librarian to return a book that was borrowed-->
+<!--a fill form that he needs to fill is displayed-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="static/Assets/pngwing.com.png">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="static/librarian.css">
+</head>
+<body>
+<div class="background-pic2"></div>
+<!--navigation bar-->
+    <nav>
+        <div class="nav-container">
+          <div class="nav-left">
+            <a href="/homepage-librarian" class="navbar-dexters-library">Dexter's Library</a>
+            <img class="logo" src="static/Assets/pngwing.com.png"/>
+          </div>
+          <div class="nav-middle">
+            <a href="/borrow-book-librarian-1">
+              <button class="nav-button">Borrow A Book</button></a>
+            <a href="/return-book-librarian-1">
+              <button class="nav-button">Return A Book</button></a>
+            <a href="/sign-up-subscriber-librarian">
+              <button class="nav-button">Subscriber Registration</button></a>
+            <a href="/insert-book-1">
+              <button class="nav-button">Insert Books</button></a>
+            <a href="/new-arrivals-librarian">
+              <button class="nav-button">New Arrivals</button></a>
+            <a href="/best-sellers-librarian">
+              <button class="nav-button">Best Sellers</button></a>
+            <a href="/branches-librarian">
+              <button class="nav-button">Branches</button></a>
+          </div>
+          <div class="nav-right">
+            <a href="/homepage-librarian">
+              <img class="search-button-navbar" src="static/assets/clipart322068.png"/></a>
+            <a href="/homepage-not-logged">
+              <button class="nav-button">Log Out</button></a>
+          </div>
+        </div>
+  </nav>
+<!-- this is a fill form the librarian needs to fill to return a book and it wont let him to return the book if some input field has not been filled-->
+
+  <form action="/return-book-librarian-1" method="post">
+  <div class="container-form">
+    <div class="field input">
+      <div class="title-text">
+        <div class="title signup">
+          <h2>Return A Book</h2><br>
+        </div><br>
+      </div>
+      <!-- input the subscriber email address that returned the book-->
+      <label for="email">Subscriber Email Address:</label>
+      <input type="email" id="email" name="email" required><br>
+      <label for="book_name">Book Name:</label>
+      <input type="text" id="book_name" name="book_name" required><br>
+      <label for="author">Author Name:</label>
+      <input type="text" id="author" name="author" required><br><br>
+        <div class="orange-button">
+        <input type="submit" value="Submit">
+        </div>
+      </div>
+    </div>
+</form>
+
+
+</body>
+</html>

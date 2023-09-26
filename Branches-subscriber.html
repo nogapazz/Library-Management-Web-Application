@@ -1,0 +1,74 @@
+<!-- this page shows the branches information of our library -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="static/Assets/pngwing.com.png">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="static/subscriber.css">
+</head>
+<body>
+<div class="background-pic2"></div>
+<!--navigation bar-->
+  <nav>
+    <div class="nav-container">
+      <div class="background-pic2"></div>
+      <div class="nav-left">
+        <a href="/homepage-subscriber" class="navbar-dexters-library">Dexter's Library</a>
+        <img class="logo" src="static/Assets/pngwing.com.png"/>
+      </div>
+      <div class="nav-middle">
+        <a href="/new-arrivals-subscriber">
+          <button class="nav-button">New Arrivals</button></a>
+        <a href="/best-sellers-subscriber">
+          <button class="nav-button">Best Sellers</button></a>
+        <a href="/branches-subscriber">
+          <button class="nav-button">Branches</button></a>
+        <a href="/order-book">
+          <button class="nav-button">Order Book</button></a>
+        <a href="/borrows-subscriber">
+          <button class="nav-button">History of borrows</button></a>
+        <a href="/extension">
+          <button class="nav-button">Do you need an extension?</button></a>
+         <a href="/homepage-subscriber">
+          <img class="search-button-navbar" src="static/assets/clipart322068.png"/>
+         </a>
+      </div>
+      <div class="nav-right">
+        <a href="/homepage-not-logged">
+          <button class="nav-button">Log Out</button></a>
+      </div>
+    </div>
+  </nav>
+
+  <span class="page-title">Branches</span>
+
+    <form action="/Branches-not-logged" method="post">
+    <div class="table-container">
+    <table>
+      <tr>
+        <td><h3>Branch Name</h3></td>
+        <td><h3>City</h3></td>
+        <td><h3>Street</h3></td>
+        <td><h3>House Number</h3></td>
+        <td><h3>Phone Number</h3></td>
+      </tr>
+      {% for branch in branches %}
+          <!-- this for loop iterates over the 'branch' variable and shows all the branches relevant details -->
+      <tr>
+        <td>{{ branch.branch_name }}</td>
+        <td>{{ branch.city }}</td>
+        <td>{{ branch.street }}</td>
+        <td>{{ branch.house_num }}</td>
+        <td>{{ branch.branch_phone_num }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+   </div>
+  </form>
+
+
+</body>
+</html>

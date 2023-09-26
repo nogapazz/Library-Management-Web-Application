@@ -1,0 +1,67 @@
+<!-- this page shows the librarian the 10 newest books (the most recent 10 books that were inserted by the librarians)-->
+<!--displaying the book's cover picture and its name as buttons that by pressing them the user can get some more information about the book-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="static/Assets/pngwing.com.png">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="static/librarian.css">
+</head>
+<body>
+<div class="background-pic2"></div>
+<!--navigation bar-->
+    <nav>
+        <div class="nav-container">
+          <div class="nav-left">
+            <a href="/homepage-librarian" class="navbar-dexters-library">Dexter's Library</a>
+            <img class="logo" src="static/Assets/pngwing.com.png"/>
+          </div>
+          <div class="nav-middle">
+            <a href="/borrow-book-librarian-1">
+              <button class="nav-button">Borrow A Book</button></a>
+            <a href="/return-book-librarian-1">
+              <button class="nav-button">Return A Book</button></a>
+            <a href="/sign-up-subscriber">
+              <button class="nav-button">Subscriber Registration</button></a>
+            <a href="/insert-book-1">
+              <button class="nav-button">Insert Books</button></a>
+            <a href="/new-arrivals-librarian">
+              <button class="nav-button">New Arrivals</button></a>
+            <a href="/best-sellers-librarian">
+              <button class="nav-button">Best Sellers</button></a>
+            <a href="/branches-librarian">
+              <button class="nav-button">Branches</button></a>
+          </div>
+          <div class="nav-right">
+            <a href="/homepage-librarian">
+              <img class="search-button-navbar" src="static/assets/clipart322068.png"/></a>
+            <a href="/homepage-not-logged">
+              <button class="nav-button">Log Out</button></a>
+          </div>
+        </div>
+  </nav>
+
+  <!-- New Arrivals heading -->
+    <span class="page-title">New Arrivals</span>
+  <!--styling the display of the books -->
+    <div class="display-products">
+      <ul>
+        <!-- A loop that runs on the book elements -->
+        {% for product in products %}
+        <li class="inline-label">
+        <!-- This creates a link to a specific book page, the link's destination is determined by the product[0] variable which is passed to the href attribute of the <a> tag, which is the book name. -->
+        <a href="/book-page-not-logged/{{ product[0] }}">
+          <!-- This creates an <img> element that displays the image of the book, the source of the image is taken from product[5] which is passed to the src attribute of the <img> tag. -->
+          <img src="{{ product[5] }}" >
+          <!-- This creates an <h3> element to display the name of the book, it takes the book name from product[0] and displays it in the <h3> element. -->
+          <h3>{{ product[0] }}</h3>
+        </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+</body>
+</html>
+

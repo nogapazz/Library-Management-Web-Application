@@ -1,0 +1,71 @@
+<!--this page is displayed to the librarian in case of the borrowing is successful-->
+<!--in this page will be displayed a message that says the borrowing transaction has been successfully completed and also a table of the updated stock of the book in the branch will be displayed -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="static/Assets/pngwing.com.png">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="static/librarian.css">
+</head>
+<body>
+<div class="background-pic2"></div>
+<!--navigation bar-->
+    <nav>
+        <div class="nav-container">
+          <div class="nav-left">
+            <a href="/homepage-librarian" class="navbar-dexters-library">Dexter's Library</a>
+            <img class="logo" src="static/Assets/pngwing.com.png"/>
+          </div>
+          <div class="nav-middle">
+            <a href="/borrow-book-librarian-1">
+              <button class="nav-button">Borrow A Book</button></a>
+            <a href="/return-book-librarian-1">
+              <button class="nav-button">Return A Book</button></a>
+            <a href="/sign-up-subscriber">
+              <button class="nav-button">Subscriber Registration</button></a>
+            <a href="/insert-book-1">
+              <button class="nav-button">Insert Books</button></a>
+            <a href="/new-arrivals-librarian">
+              <button class="nav-button">New Arrivals</button></a>
+            <a href="/best-sellers-librarian">
+              <button class="nav-button">Best Sellers</button></a>
+            <a href="/branches-librarian">
+              <button class="nav-button">Branches</button></a>
+          </div>
+          <div class="nav-right">
+            <a href="/homepage-librarian">
+              <img class="search-button-navbar" src="static/assets/clipart322068.png"/></a>
+            <a href="/homepage-not-logged">
+              <button class="nav-button">Log Out</button></a>
+          </div>
+        </div>
+  </nav>
+
+<div class="table-container">
+    <!-- book in branch table after borrowing -->
+    <table>
+        <!-- this caption indicates that the transaction was successful and includes the name of the book, the name of the author, and the name of the branch -->
+
+        <caption>The Borrowing Transaction Of {{ book_name }}, Written by {{ author_name }}, In {{branch}} Branch Has Been Successfully completed!</caption>
+    <tr>
+        <!--this table shows to the librarian the updated stock in the branch he works in of the borrowed book  -->
+
+      <td>Branch Name</td>
+      <td>Book Name</td>
+      <td>Author Name</td>
+      <td>Stock In Branch</td>
+    </tr>
+    <tr>
+      <td>{{ branch }}</td>
+      <td>{{ book_name }}</td>
+      <td>{{ author_name }}</td>
+      <td>{{ stock_counter }}</td>
+
+    </tr>
+  </table>
+ </div>
+
+
+</body>
+</html>

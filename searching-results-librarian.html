@@ -1,0 +1,74 @@
+<!-- this page shows the librarian the results for the book name or the author name he has been searching for-->
+<!--the results are displayed by buttons of the book cover pictures and their names-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="static/Assets/pngwing.com.png">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="static/librarian.css">
+</head>
+<body>
+<div class="background-pic4"></div>
+<!--navigation bar-->
+    <nav>
+        <div class="nav-container">
+          <div class="nav-left">
+            <a href="/homepage-librarian" class="navbar-dexters-library">Dexter's Library</a>
+            <img class="logo" src="static/Assets/pngwing.com.png"/>
+          </div>
+          <div class="nav-middle">
+            <a href="/borrow-book-librarian-1">
+              <button class="nav-button">Borrow A Book</button></a>
+            <a href="/return-book-librarian-1">
+              <button class="nav-button">Return A Book</button></a>
+            <a href="/sign-up-subscriber">
+              <button class="nav-button">Subscriber Registration</button></a>
+            <a href="/insert-book-1">
+              <button class="nav-button">Insert Books</button></a>
+            <a href="/new-arrivals-librarian">
+              <button class="nav-button">New Arrivals</button></a>
+            <a href="/best-sellers-librarian">
+              <button class="nav-button">Best Sellers</button></a>
+            <a href="/branches-librarian">
+              <button class="nav-button">Branches</button></a>
+          </div>
+          <div class="nav-right">
+            <a href="/homepage-librarian">
+              <img class="search-button-navbar" src="static/assets/clipart322068.png"/></a>
+            <a href="/homepage-not-logged">
+              <button class="nav-button">Log Out</button></a>
+          </div>
+        </div>
+  </nav>
+    <!--this is the searching results form that is related to the searching form -->
+   <div class="search-container2">
+    <form action="/searching-results-librarian" method="POST" class="form" id="search-form">
+    <input type="search" placeholder="Search in library" class="search-field" name="search-field" />
+      <button type="submit" class="search-button">
+        <img class="search-button-img" src="static/assets/clipart322068.png">
+      </button>
+    </form>
+  </div>
+    <!-- the title of the page is: searching results for what he has been input in the search fill form-->
+
+  <span class="page-title2">Searching Results For {{ search_query }}</span>
+     <div class="display-products">
+      <ul>
+        <!-- A loop that runs on the book elements -->
+        {% for result in results %}
+        <li class="inline-label">
+          <!--this is a link to the specified book page the user has pressed on. the book in this case is a variable-->
+          <a href="/book-page-not-logged/{{ result.book_name }}">
+          <img src="{{ result.cover_url }}" alt="{{ result.book_name }}" /> <!--book cover picture -->
+               <h3>{{ result.book_name }}</h3></a> <!--book name-->
+          </li>
+          {% endfor %}
+         </ul>
+    </div>
+
+
+
+</body>
+</html>

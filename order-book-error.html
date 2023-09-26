@@ -1,0 +1,56 @@
+<!-- this page is displayed to the subscriber in case of trying to order a book that is not borrowed and is available in the branch-->
+<!--it shows a message that says he can reach out to the branch and borrow the book beacuse the book is available in the branch, and it has a button to go back to the homepage-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="static/Assets/pngwing.com.png">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="static/subscriber.css">
+</head>
+<body>
+<div class="background-pic2"></div>
+<!--navigation bar-->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="/homepage-subscriber" class="navbar-dexters-library">Dexter's Library</a>
+        <img class="logo" src="static/Assets/pngwing.com.png"/>
+      </div>
+      <div class="nav-middle">
+        <a href="/new-arrivals-subscriber">
+          <button class="nav-button">New Arrivals</button></a>
+        <a href="/best-sellers-subscriber">
+          <button class="nav-button">Best Sellers</button></a>
+        <a href="/branches-subscriber">
+          <button class="nav-button">Branches</button></a>
+        <a href="/order-book">
+          <button class="nav-button">Order Book</button></a>
+        <a href="/borrows-subscriber">
+          <button class="nav-button">History of borrows</button></a>
+        <a href="/extension">
+          <button class="nav-button">Do you need an extension?</button></a>
+         <a href="/homepage-subscriber">
+          <img class="search-button-navbar" src="static/assets/clipart322068.png"/>
+         </a>
+      </div>
+      <div class="nav-right">
+        <a href="/homepage-not-logged">
+          <button class="nav-button">Log Out</button></a>
+      </div>
+    </div>
+  </nav>
+
+<!-- a box message that tells the subscriber that the book he wants to order is available in the branch-->
+    <div class="container-form">
+        <div class="title-text2">
+        <p>The book {{ book_name }} is available at this moment in {{ branch_name }} branch.<br><br>You can reach out to the branch and borrow it.</p>
+          </div><br><br>
+      <!-- a button that the subscriber can press on to go back to his homepage-->
+        <div class="orange-button">
+        <a href="/homepage-subscriber">
+        <input type="submit" value="Go Back To Homepage" name="ok"></div><br>
+    </div>
+
+</body>
+</html>

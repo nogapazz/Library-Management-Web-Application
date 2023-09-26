@@ -1,0 +1,50 @@
+<!-- this page is the homepage page of an unlogged user -->
+<!--it has a search form to search for a book or an author in the library-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="static/Assets/pngwing.com.png">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="static/not-logged.css">
+</head>
+<body>
+<div class="background-pic"></div>
+<!--navigation bar-->
+    <nav>
+        <div class="nav-container">
+          <div class="nav-left">
+            <a href="/homepage-not-logged" class="navbar-dexters-library">Dexter's Library</a>
+            <img class="logo" src="static/Assets/pngwing.com.png"/>
+          </div>
+          <div class="nav-middle">
+            <a href="/new-arrivals-not-logged">
+              <button class="nav-button">New Arrivals</button></a>
+            <a href="/best-sellers-not-logged">
+              <button class="nav-button">Best Sellers</button></a>
+            <a href="/branches-not-logged">
+              <button class="nav-button">Branches</button></a>
+             <a href="/homepage-not-logged">
+              <img class="search-button-navbar" src="static/assets/clipart322068.png"/></a>
+          </div>
+          <div class="nav-right">
+            <a href="/log-in">
+              <button class="login-button">Log In / Sign Up</button></a>
+          </div>
+        </div>
+  </nav>
+
+<!-- this form is a searching form so the user can search for a book name or an author name in the library -->
+ <div class="search-container">
+  <form action="/searching-results-not-logged" method="POST" class="form" id="search-form">
+    <input type="search" placeholder="Search For A Book Name/ Author Name" class="search-field" name="search-field" />
+    <button type="submit" class="search-button">
+      <img class="search-button-img" src="static/assets/clipart322068.png">
+    </button>
+  </form>
+</div>
+
+
+
+</body>
+</html>
