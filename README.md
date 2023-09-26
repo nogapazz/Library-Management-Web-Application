@@ -9,6 +9,7 @@ Features:
 - Ability for customers to order books and receive updates on their arrival time.
 - Ability for customers to extend their borrowing if the book is not ordered.
 - History and status tracking of borrowings and orders for customers.
+
 - Ability for librarians to add new books to the branches.
 - Ability for librarians to sign up new customers.
 - Execution of borrowings and returns by librarians.
@@ -17,3 +18,4 @@ How To Use?
 - Go to get_book_info and add your google api-key.
 - Go to db_conection and ad your mysql db info.
   
+![sitemap](https://github.com/nogapazz/Library-Management-Web-Application/assets/134314972/a6de44a5-8c3b-4edd-881e-f3209507eeec)
